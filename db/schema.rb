@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20110505165205) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "freeagent_domain"
+    t.string   "freeagent_subdomain"
     t.string   "freeagent_username"
     t.string   "freeagent_password"
   end

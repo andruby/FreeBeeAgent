@@ -6,7 +6,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.rememberable
       t.trackable
       t.timestamps
-      t.string :freeagent_domain
+      t.string :freeagent_subdomain
       t.string :freeagent_username
       t.string :freeagent_password
     end
