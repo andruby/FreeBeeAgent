@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
   
   def get_contacts
-    @contacts = Contact.find(:all)
+    @contacts = Contact.find(:all) if user_signed_in?
   end
 end
