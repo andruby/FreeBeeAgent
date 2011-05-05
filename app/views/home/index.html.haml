@@ -27,12 +27,12 @@
         %td= contact_id
         %td= contact.to_s
         %td= contact.sales_tax_registration_number
-        %td= invoices.count
+        %td.align_right= invoices.count
         %td.align_right= number_to_currency invoices.inject(0) { |sum, i| sum + i.net_value }
         %td.align_right= number_to_currency invoices.inject(0) { |sum, i| sum + i.sales_tax_value }
   %tfoot
     %tr
       %th{colspan: 3} Totaal
-      %th= @invoices.count
+      %th.align_right= @invoices.count
       %th.align_right= number_to_currency @invoices.inject(0) { |sum, i| sum + i.net_value }
       %th.align_right= number_to_currency @invoices.inject(0) { |sum, i| sum + i.sales_tax_value }

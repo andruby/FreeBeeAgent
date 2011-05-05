@@ -7,8 +7,7 @@ body {
 nav {
   background-color: black;
   color: white;
-  height: 30px;
-  padding: 10px;
+  padding: 15px;
   a {
     color: white;
   }
@@ -20,4 +19,15 @@ nav {
 
 .align_right {
   text-align: right;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  color: #888;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #ccc;
 }

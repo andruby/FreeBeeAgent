@@ -8,15 +8,15 @@
 </head>
 <body>
   <%= render 'home/topnav' if user_signed_in? %>
-  <% if notice %>
-    <div class="notice"><%= notice %></div>
-  <% end %>
-  <% if alert %>
-    <div class="alert"><%= alert %></div>
-  <% end %>
   <div id="main">
+    <% if notice %>
+      <div class="notice"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert"><%= alert %></div>
+    <% end %>
     <%= yield %>
   </div>
-
+  <%= render 'home/footer' if user_signed_in? %>
 </body>
 </html>
