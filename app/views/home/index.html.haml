@@ -1,1 +1,10 @@
-%h2 Home#index
+%h2 Klantenlisting
+%form.simple_form{method: 'get'}
+  .input.date
+    %label Van
+    = text_field_tag :van, @van.to_s, :name => 'van'
+  .input.date
+    %label Tot
+    = text_field_tag :tot, @tot.to_s, :name => 'tot'
+  .input.submit
+    = submit_tag "vernieuwen"
