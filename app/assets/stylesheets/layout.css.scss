@@ -1,3 +1,5 @@
+@import './constants.css.scss';
+
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -11,10 +13,12 @@ nav {
   a {
     color: white;
   }
+  border-bottom: 4px solid $red;
 }
 
 #main {
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .align_right {
@@ -22,7 +26,7 @@ nav {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   text-align: center;
   color: #888;
   bottom: 0;
@@ -30,4 +34,13 @@ footer {
   right: 0;
   padding: 15px;
   background-color: #ccc;
+}
+
+a, a:visited {
+  color: $red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
