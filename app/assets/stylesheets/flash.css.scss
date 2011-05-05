@@ -1,0 +1,17 @@
+@import './constants.css.scss';
+
+div.alert, div.notice {
+  padding: 5px;
+}
+
+div.alert {
+  border: 3px solid $red-bd;
+  color: $red;
+  background-color: $red-bg;
+}
+
+div.notice {
+  border: 3px solid $green-bd;
+  color: $green;
+  background-color: $green-bg;
+}
