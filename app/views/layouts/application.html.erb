@@ -7,13 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'home/topnav' if user_signed_in? %>
   <% if notice %>
     <div class="notice"><%= notice %></div>
   <% end %>
   <% if alert %>
     <div class="alert"><%= alert %></div>
   <% end %>
-  <%= yield %>
+  <div id="main">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
