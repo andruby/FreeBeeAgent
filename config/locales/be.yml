@@ -1,0 +1,10 @@
+"be":      
+  number:
+    format:
+      precision: 2
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: '€'
+        format: '%n%u'
